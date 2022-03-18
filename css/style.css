@@ -1,0 +1,2050 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol,ul {
+    list-style: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+body {
+    font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    min-width: 320px;
+    font-weight: 500;
+}
+input,textarea,select {
+    font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+a {
+    color: rgb(0, 0, 0);
+}
+.thumb {
+    display: block;
+}
+.thumb img {
+    display: block;
+    width: 100%;
+}
+p {
+    line-height: 1.6em;
+    font-size: 16px;
+    font-family: "GT-Eesti Medium", Arial;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+.hidden {
+    display: none;
+}
+br.clear {
+    clear: both;
+    line-height: 0;
+}
+.wrapper {
+    width: 90%;
+    margin: 0px auto;
+    max-width: 1100px;
+}
+.flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+@font-face {
+    font-family: "GT-Eesti Light";
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "GT-Eesti Regular";
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "GT-Eesti Medium";
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "GT-Eesti Bold";
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+::placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #9b9b9b;
+}
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+header h1 {
+    width: 150px;
+}
+header h1 a {
+    width: 100%;
+    display: block;
+}
+header h1 a img {
+    width: 100%;
+    display: block;
+}
+header nav.middle {
+}
+header nav.middle ul {
+    display: flex;
+}
+header nav.middle ul li {
+    margin-right: 30px;
+}
+header nav.middle ul li:last-child {
+    margin-right: 0;
+}
+header nav.middle ul li a {
+    font-family: "GT-Eesti Regular";
+}
+header nav.right {
+    
+}
+header nav.right ul {
+    display: flex;
+    align-items: center;
+}
+header nav.right ul li {
+    margin-right: 30px;
+}
+header nav.right ul li:last-child {
+    margin-right: 0;
+}
+header nav.right ul li a {
+    font-size: "GT-Eesti Regular";
+}
+header nav.right ul li a.button {
+    border-radius: 7px;
+    padding: 5px 15px;
+    background: rgba(255, 195, 170, 0.61);
+    color: rgb(237, 118, 74);
+    display: inline-block;
+}
+#spotlight {
+    padding: 100px 0px 0px;
+}
+#spotlight section.wrapper {
+}
+#spotlight section.container {
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#spotlight section.container div.left {
+    width: 40%;
+}
+#spotlight section.container div.left h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: "GT-Eesti Bold";
+}
+#spotlight section.container div.left p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    width: 76%;
+    font-family: "GT-Eesti Medium";
+}
+#spotlight section.container div.left form {
+    position: relative;
+}
+#spotlight section.container div.left form input[type="email"] {
+    border-radius: 10px;
+    border: 2px solid rgb(166, 175, 187);
+    padding: 13px 30px;
+}
+#spotlight section.container div.left form input[type="submit"] {
+    border-radius: 10px;
+    border: 2px solid #0055f9;
+    padding: 13px 18px;
+    background: rgb(0, 85, 249);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 126px;
+    cursor: pointer;
+}
+#spotlight section.container div.right {
+    width: 60%;
+    position: relative;
+}
+#spotlight section.container div.right img {
+    width: 100%;
+}
+#spotlight section.container span.dot {
+    position: absolute;
+    top: -6px;
+    left: 225px;
+    display: inline-block;
+}
+#spotlight section.container span.dot img {
+    width: 100%;
+    display: block;
+}
+#spotlight section.container span.icon {
+    border-radius: 40px;
+    padding: 24px 29px;
+    background: rgb(237, 118, 74);
+    position: absolute;
+    top: -40px;
+    left: 317px;
+    display: inline-block;
+}
+#spotlight section.container span.icon img {
+    filter: invert(1);
+    width: 80%;
+}
+#creator {
+    padding: 100px 0 0;
+}
+#creator section.wrapper {
+}
+#creator section.items {
+    margin: 0px auto;
+    width: 100%;
+}
+#creator section.items h6 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+#creator section.items ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#creator section.items ul li {
+    width: 12%;
+    padding: 20px 0;
+}
+#creator section.items ul li a {
+    display: block;
+    width: 100%;
+}
+#creator section.items ul li a img {
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+#content {
+    width: 100%;
+}
+#content section.first {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+#content section.first .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#content section.first div.left {
+    width: 45%;
+}
+#content section.first div.left img {
+    width: 100%;
+}
+#content section.first div.right {
+    width: 42%;
+}
+#content section.first div.right span.icon {
+    border-radius: 18px;
+    padding: 13px 16px;
+    background: rgb(237, 118, 74);
+    margin-bottom: 30px;
+    width: 56px;
+    display: inline-block;
+}
+#content section.first div.right span.icon img {
+}
+#content section.first div.right div.top {
+}
+#content section.first div.right div.top h3 {
+    font-size: 43px;
+    font-weight: 600;
+    font-family: "GT-Eesti Bold";
+}
+#content section.first div.right div.top p {
+    width: 70%;
+    margin: 30px 0px;
+    font-family: "GT-Eesti Medium";
+}
+#content section.first div.right div.top a.button {
+    border-radius: 9px;
+    padding: 14px 22px;
+    background: rgb(0, 85, 249);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 36px;
+}
+#content section.first div.right div.top hr.line {
+    width: 42%;
+    border-bottom: 2px dotted;
+    color: rgb(201, 196, 196);
+}
+#content section.first div.right div.review {
+}
+#content section.first div.right div.review blockquote {
+    width: 81%;
+    margin: 39px 0px 10px;
+    color: rgb(105, 105, 105);
+}
+#content section.first div.right div.review p {
+    color: rgb(105, 105, 105);
+    font-weight: 100;
+    font-family: "GT-Eesti Medium";
+}
+#content section.first div.right div.review p b {
+    font-weight: 700;
+}
+#content section.first div.right div.review small {
+    display: inline-block;
+}
+#content section.first div.right div.review small img {
+    margin-top: 20px;
+}
+#content section.second {
+    margin-top: 95px;
+    background-color: rgb(248, 248, 248);
+    padding: 70px 0px;
+}
+#content section.second .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#content section.second div.left {
+    width: 44%;
+}
+#content section.second div.left img {
+    width: 100%;
+}
+#content section.second div.right {
+    width: 48%;
+}
+#content section.second div.right span.icon {
+    border-radius: 18px;
+    padding: 13px 16px;
+    background: rgba(255, 193, 7, 0.91);
+    margin-bottom: 30px;
+    display: inline-block;
+}
+#content section.second div.right span.icon img {
+}
+#content section.second div.right div.top {
+}
+#content section.second div.right div.top h3 {
+    font-size: 43px;
+    font-weight: 600;
+    font-family: "GT-Eesti Bold";
+}
+#content section.second div.right div.top p {
+    width: 56%;
+    margin: 30px 0px;
+    font-family: "GT-Eesti Medium";
+}
+#content section.second div.right div.top a.button {
+    border-radius: 9px;
+    padding: 14px 27px;
+    background: rgb(0, 85, 249);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 36px;
+}
+#content section.second div.right div.top hr.line {
+    width: 42%;
+    border-bottom: 2px dotted;
+    color: rgb(201, 196, 196);
+}
+#content section.second div.right div.review {
+}
+#content section.second div.right div.review blockquote {
+    width: 71%;
+    margin: 39px 0px 10px;
+    color: rgb(105, 105, 105);
+}
+#content section.second div.right div.review p {
+    color: rgb(105, 105, 105);
+    font-weight: 100;
+}
+#content section.second div.right div.review p b {
+    font-weight: 700;
+}
+#content section.second div.right div.review small {
+    display: inline-block;
+}
+#content section.second div.right div.review small img {
+    margin-top: 20px;
+}
+#content section.last .wrapper {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+#content section.last div.left {
+    width: 45%;
+}
+#content section.last div.left img {
+    width: 100%;
+}
+#content section.last div.right {
+    width: 42%;
+}
+#content section.last div.right span.icon {
+    border-radius: 18px;
+    padding: 13px 16px;
+    background: rgb(90, 197, 94);
+    margin-bottom: 30px;
+    display: inline-block;
+}
+#content section.last div.right span.icon img {
+}
+#content section.last div.right div.top {
+}
+#content section.last div.right div.top h3 {
+    font-size: 43px;
+    font-weight: 600;
+    font-family: "GT-Eesti Bold";
+}
+#content section.last div.right div.top p {
+    width: 76%;
+    margin: 30px 0px;
+    font-family: "GT-Eesti Medium";
+}
+#content section.last div.right div.top a.button {
+    border-radius: 9px;
+    padding: 14px 22px;
+    background: rgb(0, 85, 249);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 36px;
+}
+#content section.last div.right div.top hr.line {
+    width: 42%;
+    border-bottom: 2px dotted;
+    color: rgb(201, 196, 196);
+}
+#content section.last div.right div.review {
+    margin-top: 20px;
+}
+#content section.last div.right div.review blockquote {
+    width: 85%;
+    margin-bottom: 20px;
+    color: rgb(105, 105, 105);
+}
+#content section.last div.right div.review p {
+    color: rgb(105, 105, 105);
+    font-weight: 100;
+    font-family: "GT-Eesti Medium";
+}
+#content section.last div.right div.review p b {
+    font-weight: 700;
+}
+#content section.last div.right div.review small {
+}
+#content section.last div.right div.review small img {
+    margin-top: 20px;
+}
+#review {
+    padding: 105px 0px 0px;
+}
+#review section.wrapper {
+}
+#review section.top {
+}
+#review section.top h3 {
+    font-size: 43px;
+    font-weight: 600;
+    width: 44%;
+    margin-bottom: 50px;
+}
+#review section.bottom {
+}
+#review section.bottom ul {
+    display: flex;
+    justify-content: space-between;
+}
+#review section.bottom ul li {
+    width: 32%;
+    position: relative;
+}
+#review section.bottom ul li p {
+    font-size: 15px;
+    font-weight: 600;
+    width: 85%;
+    font-family: "GT-Eesti Medium";
+}
+#review section.bottom ul li div.bg {
+    width: 100%;
+}
+#review section.bottom ul li div.bg img {
+    width: 100%;
+    border-radius: 4px;
+}
+#review section.bottom ul li span.play {
+    border-radius: 29px;
+    padding: 16px 18px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 22px;
+    left: 286px;
+    display: inline-block;
+}
+#review section.bottom ul li span.play img {
+    width: 100%;
+    display: block;
+}
+#review section.bottom ul li span.logo {
+    position: absolute;
+    bottom: 63px;
+    left: 9px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    padding: 6px 14px;
+    display: inline-block;
+}
+#review section.bottom ul li span.logo img {
+    width: 67px;
+    height: 27px;
+}
+#about {
+    padding: 105px 0px;
+}
+#about section.wrapper {
+}
+#about ul {
+    width: 100%;
+    display: flex;
+    grid-gap: 7%;
+}
+#about ul li {
+    width: 100%;
+    position: relative;
+}
+#about ul li div.image {
+}
+#about ul li div.image img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+#about ul li span.logo {
+    position: absolute;
+    bottom: 166px;
+    left: 15px;
+    border-radius: 7px;
+    background: rgb(255, 255, 255);
+    padding: 7px;
+    display: inline-block;
+    width: 25%;
+    height: 46px;
+}
+#about ul li span.logo img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+#about ul li div.bottom {
+}
+#about ul li div.bottom p {
+    font-size: 15px;
+    font-weight: 600;
+    width: 81%;
+    margin: 12px 0px;
+    font-family: "GT-Eesti Medium";
+}
+#about ul li div.bottom h6 {
+    font-size: 12px;
+    font-weight: 600;
+}
+#about ul li div.bottom span {
+    color: rgb(105, 105, 105);
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 3px 0px;
+}
+#about ul li div.bottom small {   
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+}
+#feature {
+    padding: 50px 0px;
+    background-color: rgb(248, 248, 248);
+}
+#feature section.wrapper {
+}
+#feature section.top {
+}
+#feature section.top h3 {
+    font-size: 41px;
+    font-weight: 600;
+    width: 47%;
+    text-align: center;
+    margin: 0px auto;
+}
+#feature section.content {
+    padding: 70px 0px 0px;
+    position: relative;
+}
+#feature section.content ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+#feature section.content ul li {
+    width: 32%;
+    padding: 35px;
+    border-right: 1px dotted rgb(201, 196, 196);
+}
+#feature section.content ul li:last-child {
+    border-right: none;
+}
+#feature section.content ul li:nth-child(3) {
+    border-right: none;
+}
+#feature section.content ul li a {
+    display: inline-block;
+}
+#feature section.content ul li a img {
+    width: 201px;
+}
+#feature section.content ul li h3 {
+}
+#feature section.content ul li h3 a {
+    margin: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    display: inline-block;
+}
+#feature section.content ul li p {
+    font-family: "GT-Eesti Medium";
+}
+#feature section.bottom {
+}
+#feature section.bottom section.content {
+}
+#feature section.bottom section.content span.icon {
+    border-radius: 16px;
+    padding: 12px 13px;
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 5px 1px 2px rgb(141 138 138 / 10%);
+    position: absolute;
+    left: 294px;
+    bottom: 81px;
+    display: inline-block;
+}
+#feature section.bottom section.content span.icon img {
+    width: 100%;
+    display: block;
+}
+#feature section.bottom section.content div.element {
+    background: rgb(209, 227, 241);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+}
+#feature section.bottom section.content div.element p {
+    text-align: left;
+    width: 60%;
+    font-family: "GT-Eesti Medium";
+    font-size: 17px;
+}
+#feature section.bottom section.content div.element a.button { 
+    background: #0056fb;
+    padding: 12px;
+    border-radius: 4px;
+    color: #fff;
+    font-family: "GT-Eesti Regular";
+}
+#product {
+    padding: 70px 0px;
+}
+#product section.wrapper {
+}
+#product section.top {
+}
+#product section.top h3 {
+    font-size: 41px;
+    font-weight: 600;
+    width: 49%;
+    text-align: center;
+    margin: 0px auto;
+    padding: 40px;
+}
+#product ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+#product ul li {
+    width: 30%;
+    padding: 40px;
+    height: 573px;
+}
+#product ul li.one {
+    background-color: rgb(208, 223, 253);
+    border-radius: 4px;
+}
+#product ul li.one span.logo {
+    border-radius: 18px;
+    padding: 16px 13px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    display: inline-block;
+}
+#product ul li.one span.logo img {
+    width: 30px;
+}
+#product ul li.one h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+#product ul li.one p {
+    width: 89%;
+    margin: 15px;
+    font-family: "GT-Eesti Medium";
+}
+#product ul li.one a.button {
+    border-radius: 9px;
+    padding: 14px 17px;
+    background: rgb(0, 85, 249);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    display: inline-block;
+    margin: 0px auto;
+}
+#product ul li.one span.hero {
+}
+#product ul li.one span.hero img {
+    width: 270px;
+    margin-top: 36px;
+}
+#product ul li.two {
+    background-color: rgb(254, 244, 215);
+    border-radius: 4px;
+}
+#product ul li.two span.logo {
+    border-radius: 18px;
+    padding: 16px 13px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    display: inline-block;
+}
+#product ul li.two span.logo img {
+    width: 30px;
+}
+#product ul li.two h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+#product ul li.two p {
+    width: 87%;
+    margin: 15px;
+    font-family: "GT-Eesti Medium";
+}
+#product ul li.two a.button {
+    border-radius: 9px;
+    padding: 14px 17px;
+    background: rgb(247, 199, 53);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    display: inline-block;
+    margin: 0px auto;
+}
+#product ul li.two span.hero {
+}
+#product ul li.two span.hero img {
+    width: 270px;
+    margin-top: 36px;
+}
+#product ul li.three {
+    background-color: rgb(250, 228, 218);
+    border-radius: 4px;
+}
+#product ul li.three span.logo {
+    border-radius: 18px;
+    padding: 18px 11px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    display: inline-block;
+}
+#product ul li.three span.logo img {
+    width: 30px;
+}
+#product ul li.three h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+#product ul li.three p {
+    text-align: center;
+    margin: 15px;
+    width: 94%;
+    font-family: "GT-Eesti Medium";
+}
+#product ul li.three a.button {
+    border-radius: 9px;
+    padding: 14px 17px;
+    background: rgb(237, 120, 74);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin: 0px auto;
+    display: inline-block;
+}
+#product ul li.three span.hero {
+}
+#product ul li.three span.hero img {
+    width: 270px;
+    margin-top: 42px;
+}
+#blog {
+    padding: 100px 0px;
+}
+#blog section.wrapper {
+}
+#blog section.top {
+    margin-bottom: 60px;
+    width: 40%;
+}
+#blog section.top h3 {
+    font-size: 41px;
+    font-family: "GT-Eesti Bold";
+    font-weight: 600;
+}
+#blog ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+#blog ul li {
+    width: 31%;
+}
+#blog ul li div.img {
+    margin-bottom: 20px;
+}
+#blog ul li div.img img {
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+}
+#blog ul li span {
+    font-family: "GT-Eesti Regular";
+    display: inline-block;
+    margin-bottom: 20px;
+}
+#blog ul li span:hover{
+    color: rgb(0, 85, 249);
+}
+#blog ul li h2 {
+    font-size: 18px;
+    font-family: "GT-Eesti Medium";
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+#blog ul li a.button {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: underline;
+    display: inline-block;
+}
+#blog div.bottom {
+    display: flex;
+}
+#blog div.bottom a.button {
+    border-radius: 5px;
+    padding: 16px;
+    background: rgb(0, 85, 249);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    display: inline-block;
+    margin: 0 auto;
+    width: 20%;
+    text-align: center;
+    font-family: "GT-Eesti Regular";
+}
+#contact {
+    background-color: rgb(0, 0, 0);
+}
+#contact section.wrapper {
+    padding: 69px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#contact div.left {
+    width: 49%;
+}
+#contact div.left h3 {
+    color: rgb(255, 255, 255);
+    font-size: 41px;
+    font-weight: 600;
+    width: 53%;
+    margin: 15px 0px;
+}
+#contact div.left p {
+    width: 79%;
+    font-size: 15px;
+    color: rgb(105, 105, 105);
+    font-family: "GT-Eesti Medium";
+}
+#contact div.left hr.line {
+    color: rgb(105, 105, 105);
+    width: 29%;
+    border-bottom: 2px dotted;
+    margin: 30px 0px;
+}
+#contact div.left div.testimonial {
+}
+#contact div.left div.testimonial h3 {
+    font-size: 17px;
+    width: 59%;
+}
+#contact div.left div.content {
+}
+#contact div.left div.content blockquote {
+    color: rgb(255, 255, 255);
+    width: 74%;
+    font-size: 15px;
+    margin: 15px 0px;
+}
+#contact div.left div.content h6 {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+}
+#contact div.left div.content span {
+    font-size: 15px;
+    color: rgb(105, 105, 105);
+    display: inline-block;
+}
+#contact div.left div.content ul.people {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin: 15px 0px;
+    align-items: center;
+}
+#contact div.left div.content ul.people li.active {
+    border: 2px solid rgb(213, 77, 28);
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+}
+#contact div.left div.content ul.people li.active img {
+}
+#contact div.left div.content ul.people li {
+}
+#contact div.left div.content ul.people li img {
+    border-radius: 50%;
+}
+#contact div.left div.content ul.people hr.line {
+}
+#contact div.left div.companies {
+}
+#contact div.left div.companies ul {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+}
+#contact div.left div.companies ul li {
+    width: 20%;
+    margin: 19px 0px;
+}
+#contact div.left div.companies ul li img {
+    width: 100%;
+    display: block;
+}
+#contact div.right {
+    background-color: rgb(255, 255, 255);
+    padding: 45px;
+    border-radius: 4px;
+    width: 49%;
+    height: 50%;
+}
+#contact div.right h4 {
+    font-weight: 700;
+    font-size: 22px;
+    padding: 10px;
+}
+#contact div.right form {
+}
+#contact div.right form div.one {
+}
+#contact div.right form div.one input {
+    border-radius: 5px;
+    border: 1px solid rgb(166, 175, 187);
+    padding: 15px 30px;
+    width: 45%;
+    margin: 8px;
+}
+#contact div.right form div.two {
+}
+#contact div.right form div.two select {
+    border: 1px solid rgb(166, 175, 187);
+    padding: 15px 28px;
+    width: 45%;
+    margin: 8px;
+    color: rgb(166, 176, 171);
+    cursor: pointer;
+}
+#contact div.right form div.tick {
+    display: flex;
+    padding: 10px;
+}
+#contact div.right form div.tick input {
+    width: 4%;
+    height: 23px;
+    margin: 10px 0px;
+}
+#contact div.right form div.tick p {
+    color: rgb(105, 105, 105);
+    width: 87%;
+    margin: 0px auto;
+    font-size: 14px;
+    padding: 10px;
+    font-family: "GT-Eesti Medium";
+}
+#contact div.right form div.tick p b {
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 500;
+}
+#contact div.right form div.button {
+    display: flex;
+}
+#contact div.right form div.button input {
+    border-radius: 6px;
+    padding: 16px 30px;
+    background: rgb(0, 85, 249);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    width: 95%;
+    margin: 0px auto;
+    cursor: pointer;
+}
+#footer {
+    padding: 100px 0px;
+}
+#footer section.wrapper {
+    display: flex;
+}
+#footer section.left {
+    width: 40%;
+}
+#footer section.left h3 {
+    width: 58%;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+#footer section.left div.social {
+}
+#footer section.left div.social ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    width: 60%;
+}
+#footer section.left div.social ul li {
+    font-family: "GT-Eesti Regular";
+    margin-bottom: 15px;
+}
+#footer section.left div.social ul li a {
+    width: 100%;
+    background: rgb(235, 232, 232);
+    padding: 12px;
+    border-radius: 10px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer section.left div.social ul li a img {
+    display: block;
+    filter: grayscale();
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+#footer section.left div.title {
+    display: flex;
+    align-items: center;
+}
+#footer section.wrapper section.bottom { 
+    display: none;
+}
+#footer section.left div.title img {
+}
+#footer section.left div.title span {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 8px;
+    display: inline-block;
+}
+#footer section.left div.bottom {
+}
+#footer section.left div.bottom ul {
+    display: flex;
+    justify-content: space-between;
+    width: 31%;
+    margin: 14px 0px;
+}
+#footer section.left div.bottom ul li {
+}
+#footer section.left div.bottom ul li a {
+}
+#footer section.right {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+#footer section.right {
+}
+#footer section.right ul {
+}
+#footer section.right ul h5 {
+    font-size: 16px;
+    font-weight: 700;
+}
+#footer section.right ul li {
+    margin: 10px 0px;
+    align-items: center;
+}
+#footer section.right ul li.one {
+    margin-top: 41px;
+}
+#footer section.right ul li.one a {
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+}
+#footer section.right ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+}
+#footer section.right ul li a img {
+    width: 23px;
+    margin-right: 8px;
+}
+
+@media all and (max-width: 1280px) {
+    header nav.middle ul li {
+        margin-right: 20px;
+    }
+    #spotlight section.container span.dot {
+        top: -10px;
+        left: 194px;
+    }
+    #spotlight section.container span.icon {
+        top: -43px;
+        left: 279px;
+    }
+    #spotlight section.container div.left form input[type="submit"] {
+        right: 102px;
+    }
+    #content section.first .wrapper {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    #content section.first div.left {
+        width: 50%;
+    }
+    #content section.first div.right {
+        width: 70%;
+    }
+    #content section.second .wrapper {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    #content section.second div.left {
+        width: 50%;
+    }
+    #content section.second div.right {
+        width: 70%;
+    }
+    #content section.last .wrapper {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    #content section.last div.left {
+        width: 50%;
+    }
+    #content section.last div.right {
+        width: 70%;
+    }
+    #product section.top h3 {
+        width: 70%;
+    }
+    #product ul li {
+        width: 32%;
+    }
+    #product ul li.three span.hero img {
+        width: 270px;
+        margin-top: 43px;
+    }
+    #review section.bottom ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #review section.bottom ul li {
+        width: 50%;
+    }
+    #review section.bottom ul li div.bg {
+        width: 83%;
+    }
+    #review section.bottom ul li span.play {
+        top: 28px;
+        left: 327px;
+    }
+    #review section.top h3 {
+        font-size: 30px;
+        font-weight: 700;
+        width: 43%;
+        margin-bottom: 40px;
+    }
+    #feature section.bottom section.content span.icon {
+        left: 266px;
+        bottom: 109px;
+    }
+    #blog section.top {
+        width: 63%;
+    }
+    #contact div.left div.content ul.people {
+        width: 40%; 
+    }
+    #footer section.right {
+        width: 70%;
+    }
+    #footer section.left div.social ul {
+        width: 66%;
+    }
+    #contact div.right form div.button input {
+        width: 74%;
+    }
+}
+
+@media all and (max-width: 1080px) {
+    header nav.middle ul li {
+        display: none;
+    }
+    #spotlight {
+        padding: 50px 0px 0px;
+    }
+    #spotlight section.container div.left h1 {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+    #spotlight section.container div.right img {
+        width: 84%;
+    }
+    #spotlight section.container span.icon {
+        border-radius: 50px;
+        padding: 18px 25px;
+        top: -30px;
+        left: 229px;
+    }
+    #spotlight section.container span.dot {
+        top: -5px;
+        left: 146px;
+    }
+    #spotlight section.container div.left p {
+        width: 83%;
+    }
+    #spotlight section.container div.left form input[type="submit"] {
+        right: 65px;
+    }
+    #creator section.items ul {
+        justify-content: center;
+    }
+    #creator section.items ul li {
+        width: 18%;
+    }
+    #content section.first div.right div.top p {
+        width: 80%;
+    }
+    #content section.first div.right div.review blockquote {
+        width: 100%;
+    }
+    #content section.second div.right div.review blockquote {
+        width: 100%;
+    }
+    #content section.second div.right div.top p {
+        width: 80%;
+    }
+    #content section.last div.right div.review blockquote {
+        width: 100%;
+    }
+    #review section.bottom ul li span.play {
+        top: 26px;
+        left: 296px;
+    }
+    #about {
+        padding: 80px 0px;
+    }
+    #about ul li span.logo {
+        bottom: 159px;
+    }
+    #features {
+        background: #f7f4f4;
+        padding: 50px 0;
+    }
+    #about ul li div.bottom p {
+        width: 87%;
+    }
+    #feature section.top h3 {
+        width: 66%;
+    }
+    #feature section.bottom section.content span.icon {
+        left: 243px;
+    }
+    #blog section.top {
+        width: 69%;
+    }
+    #blog section.top h3 {
+        font-size: 38px;
+    }
+    #blog div.bottom a.button {
+        width: 22%;
+    }
+    #contact div.right {
+        width: 53%;
+    }
+    #contact div.left {
+        width: 46%;
+    }
+    #contact div.left h3 {
+        width: 58%;
+    }
+    #contact div.left div.content ul.people {
+        width: 47%;
+    }
+    #contact div.left p {
+        width: 84%;
+    }
+    #contact div.left div.companies ul {
+        width: 91%;
+    }
+    #contact div.left hr.line {
+        width: 45%;
+        margin: 20px 0px;
+    }
+    #footer section.left div.social ul {
+        width: 87%;
+    }
+    #footer section.left div.social ul li a {
+        width: 94%;
+    }
+    #footer section.left h3 {
+        width: 62%;
+    }
+    #footer section.right {
+        width: 67%;
+    }
+    #footer section.left {
+        width: 35%;
+    }
+    #footer section.right ul li a {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 980px) {
+    #spotlight {
+        padding-top: 20px;
+    }
+    #spotlight section.container div.left form {
+        text-align: center;
+        width: 70%;
+    }
+    #spotlight section.container div.left form input[type="email"] {
+        padding: 16px 40px;
+    }
+    #spotlight section.container div.left p {
+        width: 100%;
+    }
+    #spotlight section.container div.right {
+        display: none;
+    }
+    #spotlight section.container div.left {
+        text-align: center;
+        margin: 0 auto;
+        width: 70%;
+    }
+    #spotlight section.container div.left form input[type="submit"] {
+        padding: 16px 27px;
+        right: -78px;
+    }
+    #creator section.items ul li a img {
+        height: 26px;
+    }
+    #creator section.items ul li {
+        width: 24%;
+    }
+    #creator section.items h6 {
+        font-size: 20px;
+    }
+    #review section.top {
+        margin-bottom: 30px;
+    }
+    #review section.top h3 {
+        width: 48%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #review section.bottom ul li {
+        width: 70%;
+        margin-bottom: 50px;
+    }
+    #review section.bottom ul li div.bg {
+        width: 100%;
+    }
+    #review section.bottom ul li span.play {
+        top: 33px;
+        left: 391px;
+        padding: 20px 22px;
+    }
+    #review section.bottom ul li p {
+        font-size: 19px;
+        width: 100%;
+    }
+    #review section.bottom ul li span.logo {
+        bottom: 76px;
+        left: 11px;
+    }
+    #about ul li span.logo {
+        bottom: 178px;
+    }
+    #about ul li div.bottom p {
+        width: 97%;
+    }
+    #feature section.content ul li a img {
+        width: 173px;
+    }
+    #feature section.content ul li {
+        width: 33%;
+        padding: 28px;
+    }
+    #feature section.bottom section.content div.element {
+        width: 71%;
+    }
+    #feature section.bottom section.content div.element a.button {
+        padding: 16px;
+    }
+    #feature section.bottom section.content span.icon {
+        left: 125px;
+        padding: 15px 17px;
+    }
+    #product section.top h3 {
+        width: 100%;
+    }
+    #product ul {
+        flex-wrap: wrap;
+    }
+    #product ul li {
+        width: 48%;
+        margin: 0 auto;
+    }
+    #products ul li:last-child {
+        margin-bottom: 20px;
+    }
+    #product ul li.two {
+        margin-bottom: 84px;
+    }
+    #blog {
+        padding: 40px 0px;
+    }
+    #blog section.top {
+        width: 62%;
+    }
+    #blog div.bottom a.button {
+        width: 28%;
+    }
+    #contact section.wrapper {
+        flex-wrap: wrap;
+    }
+    #contact div.left {
+        width: 90%;
+    }
+    #contact div.right {
+        width: 90%;
+    }
+    #contact div.left div.content ul.people {
+        width: 34%;
+    }
+    #contact div.left div.companies ul li {
+        width: 15%;
+    }
+    #contact div.left div.companies {
+        margin-bottom: 20px;
+    }
+    #contact div.right h4 {
+        font-size: 20px;
+    }
+    #footer section.wrapper {
+        flex-wrap: wrap;
+    }
+    #footer section.left {
+        width: 90%;
+    }
+    #footer section.right {
+        width: 100%;
+    }
+    #footer section.left h3 {
+        width: 74%;
+    }
+    #footer section.left div.social ul {
+        width: 41%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    #footer section.left div.social ul li a {
+        width: 100%;
+    }
+    #footer section.left div.title {
+        display: none;
+    }
+    #footer section.left div.bottom {
+        display: none;
+    }
+    #footer section.wrapper section.bottom { 
+        display: block;
+    }
+    #footer section.wrapper section.bottom div.title { 
+        display: flex;
+        align-items: center;
+    }
+    #footer section.wrapper section.bottom div.title img { 
+    
+    }
+    #footer section.wrapper section.bottom div.title span { 
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: 8px;
+        display: inline-block;
+    }
+    #footer section.wrapper section.bottom div.lang { 
+        display: flex;
+        justify-content: space-between;
+        width: 31%;
+        margin: 14px 0px;
+    }
+    #footer section.wrapper section.bottom div.lang a { 
+        margin-right: 20px;
+    }
+    #footer section.left div.social {
+        margin-bottom: 40px;
+    }
+    #footer section.right ul li a {
+        font-weight: 600;
+    }
+    #footer section.right ul h5 {
+        font-weight: 900;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #spotlight section.container div.left form {
+        width: 87%;
+    }
+    #spotlight section.container div.left form input[type="email"] {
+        padding: 16px 13px;
+    }
+    #spotlight section.container div.left form input[type="submit"] {
+        padding: 16px 18px;
+        right: 13px;
+    }
+    #spotlight section.container div.left h1 {
+        font-size: 28px;
+    }
+    #creator section.items ul li a img {
+        height: 21px;
+    }
+    #creator section.items ul li {
+        width: 32%;
+    }
+    #content section.first div.right {
+        width: 100%;
+    }
+    #content section.second div.right {
+        width: 100%;
+    }
+    #content section.last div.right {
+        width: 100%;
+    }
+    #content section.last div.right div.top h3 {
+        font-size: 36px;
+    }
+    #content section.last div.right div.top p {
+        width: 100%;
+    }
+    #content section.second div.right div.top h3 {
+        font-size: 32px;
+    }
+    #content section.second div.right div.top p {
+        width: 100%;
+    }
+    #content section.first div.right div.top h3 {
+        font-size: 32px;
+    }
+    #content section.first div.right div.top p {
+        width: 100%;
+    }
+    #about ul {
+        flex-wrap: wrap;
+    }
+    #about ul li {
+        margin-bottom: 30px;
+    }
+    #about ul li span.logo {
+        bottom: 140px;
+        width: 20%;
+    }
+    #about {
+        padding: 25px 0px;
+    }
+    #review {
+        padding: 50px 0px 0px;
+    }
+    #review section.bottom ul li span.play {
+        top: 23px;
+        left: 325px;
+        padding: 19px 21px;
+    }
+    #review section.top h3 {
+        width: 100%;
+    }
+    #feature section.bottom section.content span.icon {
+        left: 108px;
+    }
+    #product {
+        padding: 0px 0px;
+    }
+    #product ul li.three {
+        margin-top: 30px;
+    }
+    #feature section.content ul li a img {
+        width: 136px;
+    }
+    #product section.top {
+        padding: 0px;
+        margin: 30px 0;
+    }
+    #product section.top h3 {
+        font-size: 40px;
+        font-weight: 600;
+        width: 91%;
+    }
+    #product ul li.one span.hero img {
+        width: 236px;
+    }
+    #product ul li.two span.hero img {
+        width: 236px;
+    }
+    #product ul li.three span.hero img {
+        width: 236px;
+    }
+    #product ul li.one h1 {
+        margin-bottom: 25px;
+    }
+    #product ul li.two h1 {
+        margin-bottom: 25px;
+    }
+    #product ul li.three h1 {
+        margin-bottom: 25px;
+    }
+    #product ul li.one p {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    #product ul li.two p {
+        width: 91%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    #product ul li.three p {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    #creator section.items h6 {
+        font-size: 18px;
+    }
+    #blog section.top {
+        margin-top: 30px;
+        width: 70%;
+    }
+    #blog {
+        padding: 70px 0px;
+    }
+    #blog div.bottom a.button {
+        width: 33%;
+    }
+    #contact div.left div.content ul.people {
+        width: 39%;
+    }
+    #footer section.left div.social ul {
+        width: 49%;
+    }
+    #contact div.right {
+        width: 96%;
+    }
+}
+
+@media all and (max-width: 640px) {
+    header nav.right {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    #spotlight section.container div.left {
+        width: 100%;
+    }
+    #creator {
+        padding: 80px 0 0;
+    }
+    #content section.first div.left {
+        width: 86%;
+    }
+    #content section.first div.right div.top h3 {
+        font-size: 28px;
+    }
+    #content section.first div.right div.top p {
+        font-size: 17px;
+    }
+    #content section.first div.right div.top hr.line {
+        display: none;
+    }
+    #content section.first div.right div.review blockquote {
+        margin: 0px 0px 10px;
+    }
+    #content section.second div.right div.top hr.line {
+        display: none;
+    }
+    #content section.second div.right div.review blockquote {
+        margin: 0px 0px 10px;
+    }
+    #content section.second div.left {
+        width: 86%;
+    }
+    #content section.second div.right div.top h3 {
+        font-size: 28px;
+    }
+    #content section.second div.right div.top p {
+        font-size: 17px;
+    }
+    #content section.last div.left {
+        width: 86%;
+    }
+    #content section.last div.right div.top h3 {
+        font-size: 31px;
+    }
+    #content section.last div.right div.top p {
+        font-size: 17px;
+    }
+    #review section.bottom ul li span.logo {
+        bottom: 77px;
+    }
+    #review section.bottom ul li {
+        width: 90%;
+    }
+    #review section.bottom ul li span.play {
+        left: 314px;
+    }
+    #about ul li span.logo {
+        bottom: 156px;
+        width: 23%;
+    }
+    #feature section.top h3 {
+        width: 100%;
+        font-size: 31px;
+    }
+    #feature section.content ul li {
+        width: 50%;
+        border-right: none;
+    }
+    #feature section.bottom section.content div.element {
+        width: 91%;
+    }
+    #feature section.bottom section.content span.icon {
+        left: 44px;
+    }
+    #product section.top h3 {
+        font-size: 21px;
+        font-weight: 700;
+        width: 100%;
+        padding: 29px;
+    }
+    #product ul li.two p {
+        width: 100%;
+    }
+    #product ul li {
+        padding: 10px;
+    }
+    #product ul li.two span.hero img {
+        width: 188px;
+    }
+    #product ul li.three span.hero img {
+        width: 188px;
+    }
+    #blog ul li {
+        width: 48%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    #blog ul li:last-child {
+        margin-top: 30px;
+    }
+    #blog section.top h3 {
+        font-size: 25px;
+        text-align: center;
+        font-weight: 800;
+    }
+    #blog section.top {
+        margin-top: 30px;
+        width: 100%;
+    }
+    #blog div.bottom a.button {
+        width: 44%;
+    }
+    #contact div.left {
+        width: 100%;
+    }
+    #contact div.left h3 {
+        width: 100%;
+        font-size: 31px;
+    }
+    #contact div.left p {
+        width: 84%;
+    }
+    #contact div.left div.content ul.people {
+        width: 50%;
+    }
+    #contact div.left div.companies ul li {
+        width: 23%;
+    }
+    #contact div.right form div.one input {
+        width: 44%;
+    }
+    #contact div.right form div.two select {
+        width: 44%;
+    }
+    #contact div.right form div.tick p {
+        width: 89%;
+    }
+    #contact div.left div.testimonial h3 {
+        width: 100%;
+    }
+    #contact div.left div.content blockquote {
+        width: 80%;
+    }
+    #footer section.left div.social ul {
+        width: 65%;
+    }
+    #footer section.right {
+        flex-wrap: wrap;
+    }
+    #footer section.right ul {
+        width: 44%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media all and (max-width: 480px) {
+    #spotlight section.container div.left h1 {
+        font-size: 24px;
+    }
+    #spotlight section.container div.left form input[type="email"] {
+        padding: 16px 10px;
+    }
+    #spotlight section.container div.left form input[type="submit"] {
+        padding: 16px 14px;
+        right: -15px;
+    }
+    #creator section.items h6 {
+        font-size: 17px;
+    }
+    #creator section.items ul li {
+        width: 49%;
+    }
+    #review section.bottom ul li span.play {
+        left: 235px;
+        padding: 14px 16px;
+    }
+    #review section.bottom ul li span.logo {
+        bottom: 102px;
+    }
+    #about ul li span.logo {
+        bottom: 179px;
+        width: 21%;
+        left: 9px;
+    }
+    #feature section.content ul li {
+        width: 100%;
+    }
+    #feature section.bottom section.content div.element p {
+        width: 100%;
+    }
+    #feature section.bottom section.content span.icon {
+        left: 23px;
+        bottom: 144px;
+    }
+    #feature section.bottom section.content div.element a.button {
+        padding: 10px;
+        margin: 0 auto;
+    }
+    #feature section.bottom section.content div.element {
+        width: 100%;
+    }
+    #product ul li {
+        width: 90%;
+        margin-bottom: 84px;
+    }
+    #product ul li.one span.hero img {
+        width: 263px;
+    }
+    #product ul li.two span.hero img {
+        width: 263px;
+    }
+    #product ul li.three span.hero img {
+        width: 263px;
+    }
+    #blog {
+        padding-bottom: 50px;
+    }
+    #blog div.bottom a.button {
+        width: 66%;
+    }
+    #blog ul li {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    #contact div.left hr.line {
+        display: none;
+    }
+    #contact div.left div.content ul.people {
+        width: 60%;
+    }
+    #contact div.left h3 {
+        width: 90%;
+        font-size: 31px;
+    }
+    #contact div.left div.companies ul {
+        justify-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 13%;
+    }
+    #contact div.left div.companies ul li {
+        width: 29%;
+    }
+    #contact div.right form div.one input {
+        width: 100%;
+    }
+    #contact div.right form div.two select {
+        width: 100%;
+    }
+    #contact div.right form div.tick input {
+        width: 7%;
+        height: 21px;
+    }
+    #contact div.right form div.tick p {
+        width: 100%;
+    }
+    #contact div.right form div.button input {
+        width: 97%;
+    }
+    #footer {
+        padding: 60px 0px;
+    }
+    #footer section.left h3 {
+        width: 100%;
+    }
+    #footer section.left div.social ul {
+        width: 83%;
+    }
+}
+
+@media all and (max-width: 360px) {
+    #spotlight section.container div.left form input[type="email"] {
+        padding: 16px 21px;
+    }
+    #spotlight section.container div.left form input[type="submit"] {
+        right: -32px;
+    }
+    #content section.first {
+        margin-top: 80px;
+    }
+    #review section.bottom ul li span.play {
+        left: 207px;
+        top: 15px;
+    }
+    #product ul li.one span.hero img {
+        width: 257px;
+    }
+    #product ul li.two span.hero img {
+        width: 257px;
+    }
+    #product ul li.three span.hero img {
+        width: 257px;
+    }
+    #blog {
+        padding: 0px 0px;
+        margin-bottom: 30px;
+    }
+    #contact div.left p {
+        font-size: 16px;
+    }
+    #contact div.left div.content ul.people {
+        width: 66%;
+    }
+    #footer section.left div.social ul {
+        width: 92%;
+    }
+}
